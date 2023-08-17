@@ -1,0 +1,115 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-form{
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+
+.informacion,
+.formulario{
+    background-color: var(--color-3);
+    padding-top: 40px;
+    width: 40%;
+    border-right: solid 1px var(--color-4);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.info1,
+.info2{
+    width: 100%;
+    padding: 30px 40px;
+    gap: 20px;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: var(--color-1);
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 25px;
+    color: var(--color-1) ;
+    margin-bottom: 20px;
+}
+
+.btn{
+    font-size: 1.3rem;
+    font-family: var(--text-2);
+    background-color: transparent;
+    outline: none;
+    color: var(--color-4);
+    border: 1px solid var(--color-4);
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--color-2);
+    transition: all 0.5s ease;
+    color: var(--color-3);
+    border: 1px solid var(--color-2);
+}
+
+.formulario{
+    border-right: 0;
+    width: 60%;
+    background: #000000;
+}
+
+
+.control-form input,
+.control-inicio input{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 1px solid var(--color-1);
+}
+
+.campos svg{
+    color: var(--color-1);
+}
+
+.aviso,
+.incorrecto{
+    font-size: 1.1rem;
+    color: rgb(218, 54, 33);
+}
+
+.btn2{
+    font-size: 1.3rem;
+    font-family: var(--text-2);
+    background-color: var(--color-4);
+    border: 1px solid var(--color-4);
+    outline: none;
+    color: var(--color-3);
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.btn2:hover{
+    background-color: var(--color-2);
+    transition: all 2s ease;
+    color: var(--color-3);
+    border: 1px solid var(--color-2);
+}
+
+.hide{
+    position: absolute;
+    transform: translateY(-300%);
+}

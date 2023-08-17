@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&family=Paytone+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--text-2);
+}
+
+:root{
+    --text-1: 'Anton', sans-serif;
+    --text-2: 'Josefin Sans', sans-serif;
+    --text-3: 'Paytone One', sans-serif;
+    --color-1: #ffffff;
+    --color-2: #232323;
+    --color-3: rgb(229, 0, 28);
+    --color-4: rgb(229, 225, 0);
+}
+
+
+/* navbar */
+
+.navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.menu{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--color-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 50px;
+    color: var(--color-1);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h2{
+    font-family: var(--text-3);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.menu-hamb{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    width: 60%;
+    transition: transform .5s;
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-link{
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-family: var(--text-2);
+    font-size: 20px;
+    color: var(--color-2);
+    transition: all 0.5s;
+}
+
+.menu-link:hover{
+    color: var(--color-4);
+    transition: all 0.5s;
+}
+
+
+.carrito{
+    width: 30px;
+    height: 30px;
+    color: var(--color-2);
+    transition: all 0.5s;
+}
+
+.carrito:hover{
+    width: 32px;
+    height: 32px;
+    color: var(--color-4);
+    transition: all .5s;
+}
+
+
+/** pagina landing **/
+
+.main{
+    position: relative;
+}
+
+.sec1{
+    background-image: url(../images/bike1.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center ;
+    color: var(--color-1);
+    text-shadow: 1px 1px 3px var(--color-2);
+}
+
+.sec2{
+    background-image: url(../images/bike2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center ;
+    color: var(--color-1);
+    text-shadow: 1px 1px 3px var(--color-2);
+}
+
+.sec3{
+    background-image: url(../images/infografia-bike.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center ;
+    color: var(--color-1);
+    text-shadow: 1px 1px 3px var(--color-2);
+}
+
+.art1-t{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.art1-subt{
+    font-family: var(--text-2);
+    letter-spacing: 2px;
+    padding: 20px 80px;
+}
+
+.caba{
+    font-size: 1.5rem;
+    padding: 30px 100px 0px;
+}
+
+.bi-arrow-down-circle-fill{
+    position: absolute;
+    z-index: 1;
+    bottom: 3%;
+    animation: mov-subibaja 1s ease infinite;
+}
+
+@keyframes mov-subibaja {
+    0% {transform: translateY(20px);}
+    25% {transform: translateY(10px);}
+    100% {transform: translateY(20px)}
+}
+
+.section h1{
+    font-family: var(--text-3);
+}
+
+.section h2{
+    font-family: var(--text-1);
+}
+
